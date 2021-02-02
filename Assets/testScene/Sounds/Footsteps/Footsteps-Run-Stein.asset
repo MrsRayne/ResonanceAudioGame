@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87893e685fdfc8242b04cf83ed94a6e9, type: 3}
+  m_Name: Footsteps-Run-Stein
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 221cbb46d2269e645b83b1c5d8414486, type: 3}
+  - {fileID: 8300000, guid: 17ae30d5872ea8d419e0f86622c4722d, type: 3}
+  - {fileID: 8300000, guid: a04733e4d30945047985234d7c3b6e93, type: 3}
+  - {fileID: 8300000, guid: bb1dda02d8ed5a24da749d46afa750b5, type: 3}
+  - {fileID: 8300000, guid: 321a246f68d502d4baea9b516c540cff, type: 3}
+  - {fileID: 8300000, guid: a5d40dc3f26942c4fa1f837957414e12, type: 3}
+  - {fileID: 8300000, guid: fabe5567550f242419104f8688760387, type: 3}

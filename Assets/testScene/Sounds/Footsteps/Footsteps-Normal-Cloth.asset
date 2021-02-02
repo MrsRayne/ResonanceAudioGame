@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87893e685fdfc8242b04cf83ed94a6e9, type: 3}
+  m_Name: Footsteps-Normal-Cloth
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: d1e38504b6f72a44f83bebc6ae6cb9cc, type: 3}
+  - {fileID: 8300000, guid: 47acdaf2e5d1b51448ac06ad2999e675, type: 3}
+  - {fileID: 8300000, guid: 99ecad375dc606947a18bf5d07d7fed9, type: 3}
+  - {fileID: 8300000, guid: 6fa6a1ca742f13340ab272ba287a1c4e, type: 3}
+  - {fileID: 8300000, guid: ba6e292880b63ca40a51e55ad7aae0b0, type: 3}
+  - {fileID: 8300000, guid: c0d85ea68fdaced49bc04a923bef6019, type: 3}

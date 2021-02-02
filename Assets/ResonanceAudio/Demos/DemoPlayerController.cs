@@ -13,6 +13,7 @@
 // limitations under the License.
 
 using UnityEngine;
+using UnityEngine.Events;
 
 /// First-person player controller for Resonance Audio demo scenes.
 [RequireComponent(typeof(CharacterController))]
@@ -36,7 +37,17 @@ public class DemoPlayerController : MonoBehaviour {
   // Camera rotation sensitivity.
   private const float sensitivity = 2.0f;
 
-  void Start() {
+  // Spatial Sound Control
+  public UnityEvent onPreLeftFootstep;
+  public UnityEvent onLeftFootstep;
+  public UnityEvent onPreRightFootstep;
+  public UnityEvent onRightFootstep;
+  public LayerMask obstacleMask;
+
+  bool leftFootstep;
+
+
+    void Start() {
     characterController = GetComponent<CharacterController>();
     Vector3 rotation = mainCamera.transform.localRotation.eulerAngles;
     rotationX = rotation.x;
@@ -70,10 +81,14 @@ public class DemoPlayerController : MonoBehaviour {
     movementDirection = mainCamera.transform.localRotation * movementDirection;
     movementDirection.y = 0.0f;
     characterController.SimpleMove(movementSpeed * movementDirection);
-  }
+
+    PreFootstepEvents();
+    FootstepEvents();
+    }
 
   // Sets the cursor lock for first-person control.
-  private void SetCursorLock(bool lockCursor) {
+  private void SetCursorLock(bool lockCursor) 
+   {
     if (lockCursor) {
       Cursor.lockState = CursorLockMode.Locked;
       Cursor.visible = false;
@@ -82,4 +97,31 @@ public class DemoPlayerController : MonoBehaviour {
       Cursor.visible = true;
     }
   }
+
+  void PreFootstepEvents()
+   {
+    if (leftFootstep)
+     {
+      onPreLeftFootstep?.Invoke();
+    }
+    else
+     {
+      onPreRightFootstep?.Invoke();
+     }
+    }
+
+  void FootstepEvents()
+    {
+     if (leftFootstep)
+     {
+        onLeftFootstep?.Invoke();
+     }
+     else
+     {
+        onRightFootstep?.Invoke();
+     }
+        leftFootstep = !leftFootstep;
+  }
+
+
 }

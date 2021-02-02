@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87893e685fdfc8242b04cf83ed94a6e9, type: 3}
+  m_Name: Footsteps-Normal-Teppich
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 7a5ba0ce3664a0a41a603d2036424b44, type: 3}
+  - {fileID: 8300000, guid: 01034cef5ef92c4478577bc01722029a, type: 3}
+  - {fileID: 8300000, guid: 3f3fc08d3c397bc4dabaeecad7d96179, type: 3}
+  - {fileID: 8300000, guid: 595f5ad08e3b83448af973e8c93ddc93, type: 3}
+  - {fileID: 8300000, guid: 2396a2c1a600ad244a5d0871a82288af, type: 3}
+  - {fileID: 8300000, guid: 7aed86e08961d224bbe6cb55b973d48a, type: 3}
